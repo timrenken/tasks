@@ -27,12 +27,8 @@
   <!-- This "nav-menu" is hidden on mobile -->
   <!-- Add the modifier "is-active" to display it on mobile -->
   <div class="nav-right nav-menu">
-    <a class="nav-item">
-      Home
-    </a>
-    <a class="nav-item">
-      About
-    </a>
+    <%= link_to "Home", root_path, class: 'nav-item' %>
+    <%= link_to "About", about_path, class: 'nav-item' %>
 
     <div class="nav-item">
       <div class="field is-grouped">
