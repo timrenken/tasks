@@ -46,6 +46,7 @@ group :development do
     
   gem "bulma-rails", "~> 0.4.0"
 	gem "font-awesome-rails"
+	gem 'devise'
 
 end
 
