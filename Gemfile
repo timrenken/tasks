@@ -45,6 +45,7 @@ group :development do
   gem 'spring'
     
   gem "bulma-rails", "~> 0.4.0"
+	gem "font-awesome-rails"
 
 end
 
