@@ -1,6 +1,11 @@
 <nav class="nav">
-  <div class="nav-left">
-    <h3 class="title is-3">PTM</h3>
+  <div class="nav-left nav-menu">
+    <p class="nav-item">Personal Task Manager</p>
+		<% if current_user %>
+			<div class="nav-item">
+				<%= link_to 'New Task', new_task_path, class: "button is-primary" %>
+			</div>
+		<% end %>
   </div>
 
   <div class="nav-center">

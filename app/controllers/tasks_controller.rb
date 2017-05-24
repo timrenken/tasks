@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+	before_action :authenticate_user!
   before_action :set_task, only: [:show, :edit, :update, :destroy]
 	respond_to :html
 
@@ -49,6 +50,6 @@ class TasksController < ApplicationController
     end
 
     def task_params
-      params.require(:task).permit(:content, :user_id, :priority)
+      params.require(:task).permit(:content, :user_id, :priority, :description)
     end
 end
