@@ -1,3 +1,15 @@
+<div class="field is-grouped is-pulled-right">
+  <p class="control">
+		<%= link_to "Active", "#", class: "button is-info is-focused is-small" %>
+	</p>
+	<p class='control'>
+		<%= link_to "Archived", "#", class: "button is-danger is-focused is-small" %>
+	</p>
+</div>
+
+<br>
+<br>
+
 <% @tasks.each do |task| %>
 	<div class='box'>
 		<article class='media'>
