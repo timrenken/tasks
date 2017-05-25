@@ -1,14 +1,25 @@
-<%= form_for @task do |f| %>
+<div class='columns'>
+	<div class='column is-half'>
+		<%= form_for @task do |f| %>
+				<div class='field'>
+					<label class='label'>Task</label>
+					<p class='control'>
+						<%= f.text_field :content, class: 'input', placeholder: 'Task' %>
+					</p>
+				</div>
 
-	<%= f.label :content %>:
-	<%= f.text_field :content, required: true %>
-
-	<%= f.label :description %>:
-	<%= f.text_field :description %>
+	<div class='field'>
+		<label class='label'>Description</label>
+		<p class='control'>
+			<%= f.text_area :description, class: 'textarea', placeholder: 'Description' %>
+		</p>
+	</div>
 
 	<%= f.label :priority %>:
 	<%= f.number_field :priority, required: true %>
 
-	<%= f.button :submit %>
+	<%= f.button :submit, class: 'button is-primary' %>
 
 <% end %>
+	</div>
+</div>
