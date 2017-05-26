@@ -8,6 +8,13 @@ Requirements:
 
 * PostgreSQL 9.6.3
 
+After cloning the repo, run the following to get started:
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This will install any missing Gems and update any Gems you already have installed
+* <tt>bundle install</tt>
+
+This will create the database
+* <tt>rake db:create</tt>
+
+This will set up the tables needed for this app
+* <tt>rake db:migrate</tt>
