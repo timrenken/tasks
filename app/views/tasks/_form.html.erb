@@ -16,9 +16,14 @@
 	</div>
 
 	<%= f.label :priority %>:
-	<%= f.number_field :priority, required: true %>
+	<%= f.number_field :priority %>
+		
+		<br>
+		<br>
 
-	<%= f.button :submit, class: 'button is-primary' %>
+	<%= f.button :submit, class: 'button is-primary' do %>
+		Create
+	<% end %>
 
 <% end %>
 	</div>
